@@ -5,14 +5,14 @@ var Keyboard = function(){
 	this.keys = [];
 }
 
-Keyboard.prototype.OnKeyDown(e){
+Keyboard.prototype.OnKeyDown = function(e){
 	this.keys[e.keyCode] = true;
 }
 
-Keyboard.prototype.OnKeyUp(e){
+Keyboard.prototype.OnKeyUp = function(e){
 	this.keys[e.keyCode] = false;
 }
 
-Keyboard.prototype.IsKeyDown(keyCode){
+Keyboard.prototype.IsKeyDown = function(keyCode){
 	return this.keys[keyCode];
 }

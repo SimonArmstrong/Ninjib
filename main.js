@@ -29,9 +29,18 @@ function getDeltaTime()
 
 //-------------------- Don't modify anything above here-----------------------------------------------------------------------------------------------
 
-function Run()
-{
+var player = new Player();
+var enemy = new Enemy();
+var coin = new Coins();
 
+player.sprite.src = "B_Player.png";
+enemy.sprite.src = "B_Enemy.fw.png";
+
+function run()
+{
+	var deltaTime = getDeltaTime();
+
+	context.drawImage(player.sprite, player.position.x, player.position.y);
 }
 
 
@@ -62,3 +71,4 @@ function Run()
 })();
 
 window.onEachFrame(run);
+
