@@ -1,12 +1,7 @@
-var Coins = function ()
+var Pickups = function (name, value)
 {
-	this.value = 10; //goes to score/money
-	this.sprite = document.createElement("img");
-}
-
-var MoneyBag = function ()
-{
-	this.value = 100;
+	this.value = value; //goes to score/money
+	this.name = name;
 	this.sprite = document.createElement("img");
 }
 

@@ -31,7 +31,7 @@ function getDeltaTime()
 
 var player = new Player();
 var enemy = new Enemy();
-var coin = new Coins();
+var coins = new Pickups(10, "coins");
 
 player.sprite.src = "B_Player.png";
 enemy.sprite.src = "B_Enemy.fw.png";
