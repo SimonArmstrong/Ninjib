@@ -1,7 +1,7 @@
 var coins = function 
 {
 	this.value = 10; //goes to score/money
-	this.sprite = new Sprite("");
+	this.sprite = new document.createElement("img");
 	
 	
 }
@@ -9,7 +9,7 @@ var coins = function
 var moneyBag = function 
 {
 	this.value = 100;
-	this.sprite = new Sprite ("");
+	this.sprite = document.createElement("img");
 	
 	
 }
