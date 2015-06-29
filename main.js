@@ -39,7 +39,8 @@ enemy.sprite.src = "B_Enemy.fw.png";
 function run()
 {
 	var deltaTime = getDeltaTime();
-
+	
+	context.fillRect(0, 0, canvas.width, canvas.height);
 	context.drawImage(player.sprite, player.position.x, player.position.y);
 }
 
